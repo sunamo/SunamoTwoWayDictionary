@@ -1,4 +1,10 @@
-namespace SunamoTwoWayDictionary;
+namespace
+#if SunamoDevCode
+SunamoDevCode
+#else
+SunamoTwoWayDictionary
+#endif
+;
 
 public class TwoWayDictionary<T, U>
 {
