@@ -1,3 +1,5 @@
+
+namespace SunamoTwoWayDictionary;
 public class AllChars
 {
     public static List<char> vsZnakyWithoutSpecial;

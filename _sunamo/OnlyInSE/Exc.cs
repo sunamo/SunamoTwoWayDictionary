@@ -1,3 +1,5 @@
+
+namespace SunamoTwoWayDictionary;
 using System.Diagnostics;
 using System.Text;
 

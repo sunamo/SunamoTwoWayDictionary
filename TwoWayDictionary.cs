@@ -1,3 +1,5 @@
+
+namespace SunamoTwoWayDictionary;
 public class TwoWayDictionary<T, U>
 {
     public Dictionary<T, U> _d1 = null;
