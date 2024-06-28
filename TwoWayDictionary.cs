@@ -1,10 +1,3 @@
-namespace
-#if SunamoDevCode
-SunamoDevCode
-#else
-SunamoTwoWayDictionary
-#endif
-;
 public class TwoWayDictionary<T, U>
 {
     public Dictionary<T, U> _d1 = null;
