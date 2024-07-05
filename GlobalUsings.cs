@@ -13,3 +13,6 @@ global using SunamoTwoWayDictionary._sunamo.SunamoValues;
 global using SunamoTwoWayDictionary._sunamo.SunamoXlfKeys;
 global using SunamoTwoWayDictionary._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;
+global using System.Diagnostics;
+global using System.Net;
+global using System.Threading.Tasks;

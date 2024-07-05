@@ -1,4 +1,3 @@
-
 namespace SunamoTwoWayDictionary._sunamo.SunamoValues;
 internal class AllChars
 {
