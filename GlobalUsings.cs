@@ -4,7 +4,12 @@ global using System.Collections.Generic;
 global using System.Collections;
 global using System.IO;
 global using System.Linq;
-
 global using System;
 global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
+global using SunamoTwoWayDictionary;
+global using SunamoTwoWayDictionary._sunamo.SunamoStringGetLines;
+global using SunamoTwoWayDictionary._sunamo.SunamoValues;
+global using SunamoTwoWayDictionary._sunamo.SunamoXlfKeys;
+global using SunamoTwoWayDictionary._sunamo.SunamoExceptions.OnlyInSE;
+global using SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;

@@ -1,4 +1,4 @@
-namespace SunamoTwoWayDictionary;
+namespace SunamoTwoWayDictionary._sunamo.SunamoValues;
 
 
 

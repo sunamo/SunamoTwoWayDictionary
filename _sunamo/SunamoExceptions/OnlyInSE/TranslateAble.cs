@@ -1,5 +1,5 @@
 
-namespace SunamoTwoWayDictionary;
+namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions.OnlyInSE;
 internal class TranslateAble
 {
     

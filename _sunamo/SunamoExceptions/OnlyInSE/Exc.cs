@@ -1,5 +1,5 @@
 
-namespace SunamoTwoWayDictionary;
+namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions.OnlyInSE;
 using System.Diagnostics;
 using System.Text;
 
