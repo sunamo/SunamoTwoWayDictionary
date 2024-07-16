@@ -1,6 +1,6 @@
-namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;
+//namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;
 
-internal class CASunamoExceptions
+internal class CA
 {
     internal static bool IsListStringWrappedInArray<T>(List<T> v2)
     {

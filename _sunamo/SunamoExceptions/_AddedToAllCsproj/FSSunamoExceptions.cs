@@ -1,5 +1,7 @@
-namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;
-internal class FSSunamoExceptions
+//namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;
+
+//namespace SunamoTwoWayDictionary._sunamo.SunamoExceptions._AddedToAllCsproj;
+internal class FS
 {
     internal static void CreateUpfoldersPsysicallyUnlessThere(string nad)
     {
