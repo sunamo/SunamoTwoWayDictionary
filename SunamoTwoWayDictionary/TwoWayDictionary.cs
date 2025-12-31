@@ -2,24 +2,24 @@ namespace SunamoTwoWayDictionary;
 
 public class TwoWayDictionary<T, U>
 {
-    public Dictionary<T, U> _d1;
-    public Dictionary<U, T> _d2;
+    public Dictionary<T, U> D1;
+    public Dictionary<U, T> D2;
 
     public TwoWayDictionary(int c)
     {
-        _d1 = new Dictionary<T, U>(c);
-        _d2 = new Dictionary<U, T>(c);
+        D1 = new Dictionary<T, U>(c);
+        D2 = new Dictionary<U, T>(c);
     }
 
     public TwoWayDictionary()
     {
-        _d1 = new Dictionary<T, U>();
-        _d2 = new Dictionary<U, T>();
+        D1 = new Dictionary<T, U>();
+        D2 = new Dictionary<U, T>();
     }
 
     public void Add(T key, U value)
     {
-        _d1.Add(key, value);
-        _d2.Add(value, key);
+        D1.Add(key, value);
+        D2.Add(value, key);
     }
 }
