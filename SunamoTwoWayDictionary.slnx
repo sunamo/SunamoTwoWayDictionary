@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoTwoWayDictionary.Tests\\SunamoTwoWayDictionary.Tests.csproj" />
+  <Project Path="RunnerTwoWayDictionary\\RunnerTwoWayDictionary.csproj" />
+  <Project Path="SunamoTwoWayDictionary\SunamoTwoWayDictionary.csproj" />
+</Solution>
