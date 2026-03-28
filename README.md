@@ -1,6 +1,6 @@
 # SunamoTwoWayDictionary
 
-Dictionary where every key is value and vice versa
+A bidirectional dictionary for .NET that maintains forward and reverse mappings, allowing lookup in both directions.
 
 ## Overview
 
@@ -10,11 +10,11 @@ SunamoTwoWayDictionary is part of the Sunamo package ecosystem, providing modula
 
 ### Key Classes
 
-- **TwoWayDictionary**
+- **TwoWayDictionary<TKey, TValue>** - A dictionary maintaining bidirectional mapping between keys and values
 
 ### Key Methods
 
-- `Add()`
+- `Add(TKey key, TValue value)` - Adds a key-value pair to both forward and reverse dictionaries
 
 ## Installation
 
@@ -24,15 +24,13 @@ dotnet add package SunamoTwoWayDictionary
 
 ## Dependencies
 
-- **Microsoft.Extensions.Logging.Abstractions** (v9.0.3)
+- **Microsoft.Extensions.Logging.Abstractions** (v10.0.2)
 
 ## Package Information
 
 - **Package Name**: SunamoTwoWayDictionary
-- **Version**: 25.3.29.1
-- **Target Framework**: net9.0
-- **Category**: Platform-Independent NuGet Package
-- **Source Files**: 6
+- **Target Frameworks**: net10.0; net9.0; net8.0
+- **License**: MIT
 
 ## Related Packages
 

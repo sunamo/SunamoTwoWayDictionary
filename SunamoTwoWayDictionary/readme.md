@@ -1,20 +1,43 @@
-### SunamoTwoWayDictionary
+# SunamoTwoWayDictionary
 
-Part of PlatformIndependentNuGetPackages:
+A bidirectional dictionary for .NET that maintains forward and reverse mappings, allowing lookup in both directions.
 
-- [nuget.org](https://www.nuget.org/profiles/sunamo)
-- [github.org](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+## Features
 
-Another links:
+- **Bidirectional lookup** - store key-value pairs and look up by either key or value
+- **Type-safe generics** - supports any `notnull` types for both keys and values
+- **Capacity constructor** - pre-allocate capacity for known collection sizes
 
-- [Developer site](https://sunamo.cz)
+## Usage
 
-Request for new features / bug report / etc: [Mail](mailto:radek.jancik@sunamo.cz) or on GitHub
+```csharp
+var dictionary = new TwoWayDictionary<string, int>();
+dictionary.Add("one", 1);
+dictionary.Add("two", 2);
+
+// Forward lookup (string -> int)
+int value = dictionary.ForwardDictionary["one"]; // 1
+
+// Reverse lookup (int -> string)
+string key = dictionary.ReverseDictionary[2]; // "two"
+```
+
+## Installation
+
+```bash
+dotnet add package SunamoTwoWayDictionary
+```
+
 ## Target Frameworks
 
-**TargetFrameworks:** `net10.0;net9.0;net8.0`
+`net10.0`, `net9.0`, `net8.0`
 
-**Reason:** Code uses C# 12.0 features (collection expressions, primary constructors) or dependencies requiring .NET 8.0+:
-- Collection expressions `[]` syntax requires C# 12.0 (net8.0+)
-- Primary constructors require C# 12.0 (net8.0+) 
-- Entity Framework Core 9.x requires net8.0+
+## Links
+
+- [NuGet](https://www.nuget.org/profiles/sunamo)
+- [GitHub](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+- [Developer site](https://sunamo.cz)
+
+## License
+
+MIT

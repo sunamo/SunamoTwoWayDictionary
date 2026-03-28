@@ -1,25 +1,50 @@
 namespace SunamoTwoWayDictionary;
 
-public class TwoWayDictionary<T, U>
+/// <summary>
+/// A dictionary that maintains bidirectional mapping between keys and values,
+/// allowing lookup in both directions.
+/// </summary>
+/// <typeparam name="TKey">The type of the forward key.</typeparam>
+/// <typeparam name="TValue">The type of the forward value.</typeparam>
+public class TwoWayDictionary<TKey, TValue> where TKey : notnull where TValue : notnull
 {
-    public Dictionary<T, U> D1;
-    public Dictionary<U, T> D2;
+    /// <summary>
+    /// Gets or sets the forward dictionary mapping keys to values.
+    /// </summary>
+    public Dictionary<TKey, TValue> ForwardDictionary { get; set; }
 
-    public TwoWayDictionary(int c)
+    /// <summary>
+    /// Gets or sets the reverse dictionary mapping values to keys.
+    /// </summary>
+    public Dictionary<TValue, TKey> ReverseDictionary { get; set; }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="TwoWayDictionary{TKey, TValue}"/> class with specified capacity.
+    /// </summary>
+    /// <param name="capacity">The initial capacity of both dictionaries.</param>
+    public TwoWayDictionary(int capacity)
     {
-        D1 = new Dictionary<T, U>(c);
-        D2 = new Dictionary<U, T>(c);
+        ForwardDictionary = new Dictionary<TKey, TValue>(capacity);
+        ReverseDictionary = new Dictionary<TValue, TKey>(capacity);
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="TwoWayDictionary{TKey, TValue}"/> class.
+    /// </summary>
     public TwoWayDictionary()
     {
-        D1 = new Dictionary<T, U>();
-        D2 = new Dictionary<U, T>();
+        ForwardDictionary = new Dictionary<TKey, TValue>();
+        ReverseDictionary = new Dictionary<TValue, TKey>();
     }
 
-    public void Add(T key, U value)
+    /// <summary>
+    /// Adds a key-value pair to both the forward and reverse dictionaries.
+    /// </summary>
+    /// <param name="key">The key for the forward dictionary.</param>
+    /// <param name="value">The value for the forward dictionary, which becomes the key in the reverse dictionary.</param>
+    public void Add(TKey key, TValue value)
     {
-        D1.Add(key, value);
-        D2.Add(value, key);
+        ForwardDictionary.Add(key, value);
+        ReverseDictionary.Add(value, key);
     }
 }
