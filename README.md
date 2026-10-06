@@ -1,5 +1,10 @@
 # SunamoTwoWayDictionary
 
+## Short description
+
+Obousměrný slovník pro .NET, který udržuje mapování tam i zpět a umožňuje vyhledávat v obou směrech. Součást sbírky pinp s testy a Runnerem.
+
+
 A bidirectional dictionary for .NET that maintains forward and reverse mappings, allowing lookup in both directions.
 
 ## Overview
